@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de videojuegos</title>
+    <link rel="stylesheet" href="estiloPagina.css">
+</head>
+<body>
+    <header>
+        <section class="hero" aria-labelledby="titulo-principal">
+            <h1 id="titulo-principal">Encuentra tu próximo videojuego favorito</h1>
+            <p>Explora los juegos mejor valorados o busca información de tus títulos favoritos.</p>
+        </section>
+        <form>
+            <input id="input-videojuego" class="input-busqueda" type="text" placeholder="busca tu videojuego favorito">
+            <button id="boton-buscar" class="boton-buscar" type="submit">buscar</button>
+            <button id="boton-volver" class="boton-volver" type="button">Volver</button>
+        </form>
+    </header>
+    <main>
+        <h2 id="titulo-resultados" class="titulo-resultados">Mejor Valorados</h2>
+        <div id="spinner-carga" class="estado-carga" role="status" aria-label="Cargando videojuegos" hidden>
+            <span class="spinner" aria-hidden="true"></span>
+        </div>
+        <section id="contenedor-tarjetas" aria-label="Resultados de videojuegos"></section>
+    </main>
+    <script src="interaccionPagina2.js"></script>
+</body>
+</html>
